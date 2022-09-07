@@ -1,0 +1,27 @@
+.styledPageNumber {
+    display: inline-flex;
+    list-style: none;
+
+}
+.styledPageNumber li{
+    margin: 0 4px;
+}
+@media screen and (max-width: 500px) {
+    .styledPageNumber li{
+        margin: 0 4px;
+    }
+}
+
+.activePage{
+    background-color: blue;
+}
+button{
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0000ff;
+    background-color: rgba(7, 42, 242, 0.25);
+}
