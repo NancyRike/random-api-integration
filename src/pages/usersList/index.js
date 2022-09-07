@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loader from "../../components/loader";
 import Pagination from "../../components/pagination";
 import { generateUrl } from "../../utils/generateUrl";
 import "./style.css";
@@ -64,6 +65,7 @@ const UsersList = () => {
             <th>Job title</th>
             <th>state</th>
           </tr>
+          {users.isLoading && <Loader /> }
           {currentRecords?.map((user, index) => {
             return (
               <tr key={user.id}>
