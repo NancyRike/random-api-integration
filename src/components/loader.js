@@ -7,6 +7,7 @@ const Loader = () => {
   return (
     <div className='loaderWrapper'>
         <img src={loaderImg} />
+        
     </div>
   )
 }
